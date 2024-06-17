@@ -1,0 +1,32 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.6rem;
+  background-color: #22272a;
+  h2 {
+    font-size: 2.8rem;
+    color: #fff;
+  }
+}
+
+.my-info {
+  .figure {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  h3{
+    margin-top: 16px;
+    font-size: 2.8rem;
+    line-height: 1;
+    color: #fff;
+  }
+  p{
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #a1a1a1;
+  }
+}
