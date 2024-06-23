@@ -1,3 +1,7 @@
+.text-center{
+    text-align: center;
+}
+
 .ant-layout *{
     font-size: 1rem;
 }
@@ -5,8 +9,8 @@
 .ant-layout{
     height: 100vh;
 }
-.ant-layout-sider{
-    width: 100% !important;
-    max-width: 30rem !important;
-}
 
+
+.ant-layout-content{
+    position: relative;
+}

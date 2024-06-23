@@ -11,22 +11,82 @@
 }
 
 .my-info {
+  margin-top: 7.4rem;
   .figure {
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
     overflow: hidden;
   }
-  h3{
+  h3 {
     margin-top: 16px;
     font-size: 2.8rem;
     line-height: 1;
     color: #fff;
   }
-  p{
+  p {
     margin-top: 1.2rem;
     font-size: 1.4rem;
     line-height: 1;
     color: #a1a1a1;
   }
+}
+
+.ant-menu {
+  margin-top: 7.2rem;
+  background-color: transparent;
+  &::after,
+  &::before {
+    display: none;
+  }
+  & .ant-menu-item {
+    padding-left: 7rem;
+    & ~ .ant-menu-item {
+      margin-top: 4.5rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+
+      font-size: 2.4rem;
+      color: #a1a1a1;
+      letter-spacing: 0;
+      svg {
+        display: inline-block;
+        margin-right: 1.4rem;
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+      }
+    }
+  }
+  & .ant-menu-item-selected {
+    background-color: transparent;
+    a,
+    a:hover {
+      color: #d2592c;
+      svg {
+        path {
+          fill: #d2592c;
+        }
+      }
+    }
+  }
+}
+
+.date-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 3rem;
+  padding: 0 2.2rem;
+  width: calc(100% - 6rem);
+  height: 5.8rem;
+  background-color: #22272a;
+  font-size: 2.2rem;
+  color: #fff;
+  border-radius: 0.8rem;
 }
