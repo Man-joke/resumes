@@ -91,7 +91,11 @@ const sidermenu = () => {
         <Menu defaultSelectedKeys={['1']} items={items}></Menu>
       </ConfigProvider>
 
-      <div className="date-box">{formattedDate}</div>
+      <div className="date-box">
+        <p>
+          {formattedDate}
+        </p>
+        </div>
     </>
   );
 };
