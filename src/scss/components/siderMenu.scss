@@ -84,6 +84,9 @@
   margin-bottom: 4rem;
   width: 100%;
   p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 2.2rem;
     padding: 0 2.2rem;
     width: 100%;
@@ -91,7 +94,7 @@
     font-size: 2.2rem;
     background-color: #22272a;
     color: #fff;
-    line-height: 5.8rem;
+    line-height: 1;
     border-radius: 0.8rem;
     text-align: center;
   }

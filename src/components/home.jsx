@@ -1,11 +1,17 @@
-import { Typography } from "antd";
+import { Grid, Tag, Typography } from "antd";
 import React from "react";
 
-const home = () => {
+const { useBreakpoint } = Grid;
+const Home = () => {
   const { Title, Text } = Typography;
 
+  const {lg} = useBreakpoint();
+
+  const titleFontSize = lg ? "8rem" : '4rem'
+  const subFontSize = lg ? "2.8rem" : '1.4rem'
+
   const titleStyled = {
-    fontSize: "8rem",
+    fontSize: titleFontSize,
     position: "absolute",
     left: "50%",
     top: "40%",
@@ -15,22 +21,23 @@ const home = () => {
   };
 
   const subStyled = {
-    position: 'absolute',
+    position: "absolute",
     left: "50%",
-    bottom: '10rem',
-    transform: 'translateX(-50%)',
-    fontSize: '2.8rem',
-    color: '#A1A1A1',
-  }
+    bottom: "10rem",
+    transform: "translateX(-50%)",
+    fontSize: subFontSize,
+    color: "#A1A1A1",
+  };
   return (
     <>
       <Title level={2} className="text-center" style={titleStyled}>
         WELCOME TO MY <br />
         PORTFOLIO
       </Title>
-      <Text style={subStyled} >방문해 주셔서 감사합니다.</Text>
+      <Text style={subStyled}>방문해 주셔서 감사합니다.</Text>
+
     </>
   );
 };
 
-export default home;
+export default Home;

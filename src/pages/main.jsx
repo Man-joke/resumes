@@ -5,7 +5,7 @@ import { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
 import SiderMenu from "../components/siderMenu";
 
-import Home from "../components/home";
+import Home from "../components/Home";
 import Profile from "../components/profile";
 import Work from "../components/work";
 import ETC from "../components/etc";

@@ -1,16 +1,14 @@
-.text-center{
-    text-align: center;
-}
-
-.ant-layout *{
-    font-size: 1rem;
-}
-
 .ant-layout{
     font-family: 'NotoSansKR', sans-serif;
     height: 100vh;
 }
+.ant-layout *{
+    font-size: 1rem;
+}
 
+.text-center{
+    text-align: center;
+}
 
 .ant-layout-content{
     position: relative;
