@@ -1,0 +1,19 @@
+.works-wrap{
+    margin-top: 7rem;
+    height: 60rem;
+    overflow: auto;
+    &::-webkit-scrollbar{
+        display: none;;
+    }
+
+}
+
+.items{
+    border: 1px solid rgb(161, 161, 161);
+    transition: all 0.3s;
+    &:hover{
+        border: 1px solid #d2592c;
+        box-shadow: 7px 7px 12px 0 rgba(56, 87, 197, 0.3);
+        transition: all 0.3s;
+    }
+}
