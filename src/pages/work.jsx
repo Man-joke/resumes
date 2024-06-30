@@ -2,7 +2,7 @@ import {  Typography } from "antd";
 import React from "react";
 import Works from "../components/Works";
 const { Title } = Typography;
-const work = () => {
+const Work = () => {
   return (
     <section className="section">
       <div className="section-top">
@@ -18,4 +18,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;
