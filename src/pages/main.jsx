@@ -35,7 +35,7 @@ const main = () => {
     >
       <div className="wrapper" style={{ background: "#D9D9D9" }}>
         <Layout style={maxWidth}>
-          <Sider width={300}>
+          <Sider width={'30rem'}>
             <SiderMenu />
           </Sider>
           <Content style={contentStyle}>
