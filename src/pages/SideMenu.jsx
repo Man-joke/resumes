@@ -1,12 +1,12 @@
 import { ConfigProvider, Flex, Menu } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import manjoke from "../images/img-manjoke.png";
 import { ReactComponent as Home } from "../images/ico-home.svg";
 import { ReactComponent as Profile } from "../images/ico-profile.svg";
 import { ReactComponent as Work } from "../images/ico-work.svg";
 import { ReactComponent as Etc } from "../images/ico-etc.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const items = [
   {
@@ -62,9 +62,34 @@ const week = [
   "토요일",
 ];
 const todayLabel = week[today.getDay()];
-const formattedDate = `${today.getFullYear()}. ${today.getMonth() + 1}. ${today.getDate()} ${todayLabel}`;
+const formattedDate = `${today.getFullYear()}. ${
+  today.getMonth() + 1
+}. ${today.getDate()} ${todayLabel}`;
 
-const sidermenu = () => {
+const SideMenu = () => {
+  const location = useLocation();
+
+  let result =1;
+  useEffect(() => {
+    const path = location.pathname.split("/")[1];
+    switch (path) {
+      case "etc":
+        result = "4";
+        break;
+      case "work":
+        result = "3";
+        break;
+      case "profile":
+        result = "2";
+        break;
+      default:
+        result = "1";
+    }
+    setCurrent(result);
+  }, [location]);
+
+  const [current, setCurrent] = useState(result);
+
   return (
     <>
       <div className="portfolio">
@@ -88,16 +113,17 @@ const sidermenu = () => {
           },
         }}
       >
-        <Menu defaultSelectedKeys={['1']} items={items}></Menu>
+        <Menu
+          selectedKeys={[current]}
+          items={items}
+        ></Menu>
       </ConfigProvider>
 
       <div className="date-box">
-        <p>
-          {formattedDate}
-        </p>
-        </div>
+        <p>{formattedDate}</p>
+      </div>
     </>
   );
 };
 
-export default sidermenu;
+export default SideMenu;

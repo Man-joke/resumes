@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { ConfigProvider, Layout } from "antd";
 import { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
-import SiderMenu from "./siderMenu";
+import SideMenu from "./SideMenu";
 
 import Home from ".//home";
 import Profile from "./profile";
@@ -21,6 +21,7 @@ const contentStyle = {
   maxWidth: "136rem",
 };
 
+
 const main = () => {
   return (
     <ConfigProvider
@@ -36,7 +37,7 @@ const main = () => {
       <div className="wrapper" style={{ background: "#D9D9D9" }}>
         <Layout style={maxWidth}>
           <Sider width={'30rem'}>
-            <SiderMenu />
+            <SideMenu />
           </Sider>
           <Content style={contentStyle}>
             <Routes>
