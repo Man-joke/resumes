@@ -3,12 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import { ConfigProvider, Layout } from "antd";
 import { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
-import SiderMenu from "../components/siderMenu";
+import SiderMenu from "./siderMenu";
 
-import Home from "../components/home";
-import Profile from "../components/profile";
-import Work from "../components/work";
-import ETC from "../components/etc";
+import Home from ".//home";
+import Profile from "./profile";
+import Work from "./work";
+import ETC from "./etc";
 
 const maxWidth = {
   margin: "0 auto",

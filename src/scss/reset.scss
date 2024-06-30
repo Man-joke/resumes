@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'NotoSansKR', sans-serif !important;
 }
 html {
     font-size: 10px !important;
@@ -26,7 +27,7 @@ input,
 select,
 table,
 pre {
-    font-family: 'NotoSansKR', sans-serif !important;
+    font-family: 'NotoSansKR', sans-serif ;
     color: #222;
     font-size: 1rem;
     letter-spacing: -0.05rem;

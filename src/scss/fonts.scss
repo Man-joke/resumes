@@ -1,11 +1,6 @@
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR/NotoSansKR-Black.eot");
-  src: url("../font/NotoSansKR/NotoSansKR-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/NotoSansKR/NotoSansKR-Black.woff2") format("woff2"),
-    url("../font/NotoSansKR/NotoSansKR-Black.woff") format("woff"),
-    url("../font/NotoSansKR/NotoSansKR-Black.ttf") format("truetype");
+  src: url("./font/NotoSansKR-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -13,12 +8,7 @@
 
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR/NotoSansKR-Bold.eot");
-  src: url("../font/NotoSansKR/NotoSansKR-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/NotoSansKR/NotoSansKR-Bold.woff2") format("woff2"),
-    url("../font/NotoSansKR/NotoSansKR-Bold.woff") format("woff"),
-    url("../font/NotoSansKR/NotoSansKR-Bold.ttf") format("truetype");
+  src: url("./font/NotoSansKR-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,12 +16,7 @@
 
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR/NotoSansKR-Medium.eot");
-  src: url("../font/NotoSansKR/NotoSansKR-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/NotoSansKR/NotoSansKR-Medium.woff2") format("woff2"),
-    url("../font/NotoSansKR/NotoSansKR-Medium.woff") format("woff"),
-    url("../font/NotoSansKR/NotoSansKR-Medium.ttf") format("truetype");
+  src: url("./font/NotoSansKR-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -39,24 +24,14 @@
 
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR/NotoSansKR-Regular.eot");
-  src: url("../font/NotoSansKR/NotoSansKR-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/NotoSansKR/NotoSansKR-Regular.woff2") format("woff2"),
-    url("../font/NotoSansKR/NotoSansKR-Regular.woff") format("woff"),
-    url("../font/NotoSansKR/NotoSansKR-Regular.ttf") format("truetype");
+  src: url("./font/NotoSansKR-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR/NotoSansKR-Light.eot");
-  src: url("../font/NotoSansKR/NotoSansKR-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/NotoSansKR/NotoSansKR-Light.woff2") format("woff2"),
-    url("../font/NotoSansKR/NotoSansKR-Light.woff") format("woff"),
-    url("../font/NotoSansKR/NotoSansKR-Light.ttf") format("truetype");
+  src: url("./font/NotoSansKR-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -64,12 +39,7 @@
 
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR/NotoSansKR-Thin.eot");
-  src: url("../font/NotoSansKR/NotoSansKR-Thin.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/NotoSansKR/NotoSansKR-Thin.woff2") format("woff2"),
-    url("../font/NotoSansKR/NotoSansKR-Thin.woff") format("woff"),
-    url("../font/NotoSansKR/NotoSansKR-Thin.ttf") format("truetype");
+  src: url("./font/NotoSansKR-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
