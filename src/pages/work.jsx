@@ -1,6 +1,6 @@
 import {  Typography } from "antd";
 import React from "react";
-import Works from "../components/Works";
+import WorkItem from "../components/WorkItem";
 const { Title } = Typography;
 const work = () => {
   return (
@@ -12,7 +12,7 @@ const work = () => {
         <p className="text">WORK EXPERIENCE</p>
       </div>
       <div className="works-wrap">
-        <Works />
+        <WorkItem />
       </div>
     </section>
   );

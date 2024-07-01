@@ -86,7 +86,7 @@ const worksList = [
   },
 ];
 
-const Works = () => {
+const WorkItem = () => {
   return (
     <Flex gap={"4rem"} wrap justify="space-between">
       {worksList.map((item) => (
@@ -101,4 +101,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default WorkItem;

@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { ConfigProvider, Layout } from "antd";
-import { Content } from "antd/es/layout/layout";
-import Sider from "antd/es/layout/Sider";
 import SideMenu from "./SideMenu";
+
 
 import Home from "./Home";
 import Profile from "./Profile";
 import Work from "./Work";
 import ETC from "./Etc";
+
+const {Content, Sider }  = Layout;
 
 const maxWidth = {
   margin: "0 auto",
