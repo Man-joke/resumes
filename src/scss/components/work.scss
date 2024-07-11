@@ -1,19 +1,13 @@
-.works-wrap{
-    margin-top: 7rem;
-    height: 60rem;
-    overflow: auto;
-    &::-webkit-scrollbar{
-        display: none;;
-    }
+@import "../mixin.scss";
 
-}
-
-.items{
-    border: 1px solid rgb(161, 161, 161);
-    transition: all 0.3s;
-    &:hover{
-        border: 1px solid #d2592c;
-        box-shadow: 7px 7px 12px 0 rgba(56, 87, 197, 0.3);
-        transition: all 0.3s;
-    }
+.work-wrap {
+  gap: 3rem;
+  overflow: auto;
+  padding-bottom: 4rem;
+  @include mq("lg") {
+    gap: 2rem;
+  }
+  @include mq("md") {
+    gap: 2rem;
+  }
 }

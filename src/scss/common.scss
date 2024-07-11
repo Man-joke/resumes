@@ -1,7 +1,11 @@
-
+.visual-hidden{
+  position: absolute;
+  opacity: 0;
+}
 
 .section {
   padding: 6rem;
+  overflow: auto;
 
   .section-top {
     .title-h3 {

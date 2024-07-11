@@ -6,7 +6,7 @@ import SideMenu from "./SideMenu";
 
 import Home from "./Home";
 import Profile from "./Profile";
-import Work from "./Work";
+import Works from "./Works";
 import ETC from "./Etc";
 
 const {Content, Sider }  = Layout;
@@ -44,7 +44,7 @@ const main = () => {
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/profile" element={<Profile />}></Route>
-              <Route path="/work" element={<Work />}></Route>
+              <Route path="/work" element={<Works />}></Route>
               <Route path="/etc" element={<ETC />}></Route>
             </Routes>
           </Content>
