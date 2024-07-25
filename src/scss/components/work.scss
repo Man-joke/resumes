@@ -1,9 +1,11 @@
 @import "../mixin.scss";
 
 .work-wrap {
+  margin-top: 4.7rem;
   gap: 3rem;
   overflow: auto;
   padding-bottom: 4rem;
+  height: calc(100vh - 30rem);
   @include mq("lg") {
     gap: 2rem;
   }
