@@ -21,7 +21,7 @@ const thumbList = [
       },
       {
         text: '리스트',
-        href:'./publ/counseling/index.html'
+          href:'./publ/counseling/index.html'
       },
     ],
     description:
