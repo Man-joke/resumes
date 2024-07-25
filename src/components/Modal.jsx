@@ -2,11 +2,15 @@ import React from "react";
 
 const Modal = ({ onClose, selectedIndex, thumbList }) => {
   const selectedItem = thumbList[selectedIndex];
+  const linkHandleClick = ({ link }) => {
+    console.log(link);
+    window.open( link, '_blank', 'noopener,noreferrer');
+  };
   return (
     <>
       <div className="modal-backdrop">
         <div className="modal">
-          <button onClick={onClose}>닫기</button>
+          <button onClick={onClose} className="close">닫기</button>
           <div className="top">
             <figure>
               <img src={selectedItem.img} alt={selectedItem.name} />
@@ -25,14 +29,10 @@ const Modal = ({ onClose, selectedIndex, thumbList }) => {
                 {selectedItem.date}
               </p>
               <div className="link-wrap">
-                {selectedItem.linkBtn.map((item, idx) => (
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    className="link"
-                  >
+                {selectedItem.linkBtn.map((item) => (
+                  <button onClick={()=>linkHandleClick(item.href)} className="link" key={item.text}>
                     {item.text}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -43,7 +43,7 @@ const Modal = ({ onClose, selectedIndex, thumbList }) => {
               dangerouslySetInnerHTML={{ __html: selectedItem.description }}
             ></p>
             {selectedItem.additional.map((item) => (
-              <span key={item}>{item.desc}</span>
+              <span key={item.desc}>{item.desc}</span>
             ))}
           </div>
         </div>
