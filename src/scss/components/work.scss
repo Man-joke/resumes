@@ -1,15 +1,200 @@
 @import "../mixin.scss";
-
-.work-wrap {
-  margin-top: 4.7rem;
-  gap: 3rem;
-  overflow: auto;
-  padding-bottom: 4rem;
-  height: calc(100vh - 30rem);
-  @include mq("lg") {
-    gap: 2rem;
+.works-wrap {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
   }
-  @include mq("md") {
-    gap: 2rem;
+}
+.work-wrap {
+  position: relative;
+  margin-top: 4.7rem;
+  overflow: auto;
+  padding-bottom: 3rem;
+  height: calc(100vh - 30rem);
+
+  .items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 5.4rem;
+    width: 100%;
+    max-width: calc(33% - 2rem);
+    height: 24rem;
+    border-radius: 1.2rem;
+    border: 1px solid #a1a1a1;
+    margin-top: 3rem;
+    p {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2.6rem;
+      line-height: 1;
+      color: #a1a1a1;
+      font-weight: 700;
+    }
+    .figure {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 10.8rem);
+      height: auto;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5.8rem 4rem;
+  width: 64rem;
+  height: auto;
+  border-radius: 0.4rem;
+  background: white;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+
+  .top {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    figure {
+      width: 22rem;
+      height: 13.9rem;
+      border: 1px solid #000;
+      flex-shrink: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .info {
+      font-size: 2.2rem;
+      color: #000;
+      width: 100%;
+      h3 {
+        font-size: 2.2rem;
+        color: #000;
+        display: flex;
+        align-items: flex-end;
+        gap: 2rem;
+        a{
+          display: inline-block;
+          font-size: 1.4rem;
+          color: #999;
+        }
+      }
+      p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #686868;
+        line-height: 2.2rem;
+      }
+      .link-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0rem 0.8rem;
+        .link {
+          display: inline-block;
+          margin-top: 0.8rem;
+          width: 13.4rem;
+          min-width: 13.4rem;
+          height: 4.2rem;
+          background: #fff;
+          text-align: center;
+          font-size: 1.4rem;
+          color: #2e2e2e;
+          font-weight: bold;
+          line-height: 4.2rem;
+          border: 1px solid #000;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
+  .bottom {
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    .txt {
+      font-size: 1.4rem;
+      color: #000;
+      line-height: 1.9rem;
+      font-weight: 500;
+    }
+    span {
+      position: relative;
+      display: block;
+      margin-top: 1rem;
+      margin-left: 1.4rem;
+      font-size: 1.5rem;
+      color: #666;
+      line-height: 2.5rem;
+      & ~ span {
+        margin-top: 0.4rem;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: -1.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.4rem;
+        height: 0.4rem;
+        background: #666;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+.modal button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@include mq("lg") {
+  .work-wrap {
+    .items {
+      p {
+        font-size: 2rem;
+      }
+    }
   }
 }

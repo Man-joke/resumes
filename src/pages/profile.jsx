@@ -118,7 +118,7 @@ const programs = [
 const { Title } = Typography;
 const profile = () => {
   return (
-    <section className="section">
+    <section className="section-right">
       <div className="section-top">
         <Title level={3} className="title title-h3">
           Profile
