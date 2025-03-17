@@ -1,18 +1,18 @@
 const worksList = [
     {
-      img: require("../images/logos/eugenefn.jpg"),
+      img: require("../images/logos/ci_en_signature.png"),
       name: "AI 디지털",
     },
+    // {
+    //   img: require("../images/logos/uplaner.png"),
+    //   name: "아트봉봉",
+    // },
     {
-      img: require("../images/logos/namyang.png"),
-      name: "아트봉봉",
-    },
-    {
-      img: require("../images/logos/namyang.png"),
+      img: require("../images/logos/uplaner.png"),
       name: "유플래너",
     },
     {
-      img: require("../images/logos/namyang.png"),
+      img: require("../images/logos/eugenefn.jpg"),
       name: "유진투자증권",
     },
     {
@@ -43,10 +43,10 @@ const worksList = [
       img: require("../images/logos/art1.jpg"),
       name: "art1",
     },
-    {
-      img: require("../images/logos/howru.jpg"),
-      name: "하우루",
-    },
+    // {
+    //   img: require("../images/logos/howru.jpg"),
+    //   name: "하우루",
+    // },
   ];
 
 export default worksList;

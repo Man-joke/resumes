@@ -3,7 +3,7 @@ import { Flex } from "antd";
 
 const WorkItem = ({ works, handleItemClick }) => {
   return (
-    <Flex wrap justify="space-between" className="work-wrap">
+    <Flex wrap className="work-wrap">
       {works.map((item, idx) => (
         <div className="items" key={item.name} onClick={() => handleItemClick(idx)}>
           <figure className="figure">
