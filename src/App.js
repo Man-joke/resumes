@@ -1,14 +1,13 @@
 import { BrowserRouter} from "react-router-dom";
 import "./App.css";
-import Main from './pages/main'
 import { ConfigProvider } from "antd";
-
+import Main from "./pages/main";
 
 function App() {
   return (
     <BrowserRouter>
       <ConfigProvider theme={{ cssVar: false, hashed: false }}>
-<Main />
+        <Main />
       </ConfigProvider>
     </BrowserRouter>
   );

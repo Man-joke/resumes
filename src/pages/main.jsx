@@ -29,7 +29,7 @@ const main = () => {
       theme={{
         components: {
           Layout: {
-            siderBg: "#31383E",
+            sideBg: "#31383E",
             bodyBg: "#fff",
           },
         },
