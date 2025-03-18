@@ -5,7 +5,7 @@ const home = () => {
   const { Title, Text } = Typography;
 
   const titleStyled = {
-    fontSize: "8rem",
+    fontSize: "10rem",
     position: "absolute",
     left: "50%",
     top: "40%",
@@ -17,11 +17,12 @@ const home = () => {
   const subStyled = {
     position: 'absolute',
     left: "50%",
-    bottom: '10rem',
+    bottom: '4rem',
     transform: 'translateX(-50%)',
-    fontSize: '2.8rem',
+    fontSize: '2rem',
     color: '#A1A1A1',
   }
+
   return (
     <>
       <Title level={2} className="text-center" style={titleStyled}>
