@@ -4,10 +4,13 @@
   &.etc {
     .items {
         background: #f6f6f6;
-        height:23rem;
+        height:auto;
         overflow: hidden;
       .figure {
+        position: unset;
+        transform: unset;
         width: 100%;
+        height: fit-content;
         img {
           aspect-ratio: 0;
         }

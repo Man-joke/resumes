@@ -14,12 +14,11 @@ const {Content, Sider }  = Layout;
 const maxWidth = {
   margin: "0 auto",
   width: "100%",
-  maxWidth: "1660px",
 };
 
 const contentStyle = {
   width: "100%",
-  maxWidth: "136rem",
+  // maxWidth: "136rem",
 };
 
 
