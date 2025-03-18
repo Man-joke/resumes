@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resumes/static/css/main.db722147.css",
-    "main.js": "/resumes/static/js/main.ceca5325.js",
+    "main.js": "/resumes/static/js/main.037bf8fb.js",
     "static/js/453.d15418a1.chunk.js": "/resumes/static/js/453.d15418a1.chunk.js",
     "static/media/NotoSansKR-Black.woff": "/resumes/static/media/NotoSansKR-Black.19b754611eddc894871d.woff",
     "static/media/NotoSansKR-Bold.woff": "/resumes/static/media/NotoSansKR-Bold.cdc21ec1a4fa0f11ecf0.woff",
@@ -51,11 +51,11 @@
     "static/media/ico-work.svg": "/resumes/static/media/ico-work.508c3af010a73b387712c9b42ffa6493.svg",
     "static/media/ico-home.svg": "/resumes/static/media/ico-home.e654b0c51199566d9db34449f7b8211e.svg",
     "main.db722147.css.map": "/resumes/static/css/main.db722147.css.map",
-    "main.ceca5325.js.map": "/resumes/static/js/main.ceca5325.js.map",
+    "main.037bf8fb.js.map": "/resumes/static/js/main.037bf8fb.js.map",
     "453.d15418a1.chunk.js.map": "/resumes/static/js/453.d15418a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db722147.css",
-    "static/js/main.ceca5325.js"
+    "static/js/main.037bf8fb.js"
   ]
 }
