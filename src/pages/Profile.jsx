@@ -51,11 +51,11 @@ const educations = [
 const careers = [
   {
     year: "2023",
-    name: "(주)돔팸 - (재직중)",
+    name: "(주)돔팸",
   },
   {
     year: "2023",
-    name: "신사브릿지 (파견직)",
+    name: "신사브릿지 (파견-프리랜서)",
   },
   {
     year: "2022",
@@ -69,10 +69,10 @@ const careers = [
     year: "2019",
     name: "연프러덕션 방송 미술",
   },
-  {
-    year: "2018",
-    name: "(주)새날기획 편집디자인",
-  },
+  // {
+  //   year: "2018",
+  //   name: "(주)새날기획 편집디자인",
+  // },
 ];
 const certifications = [
   {
@@ -109,10 +109,10 @@ const programs = [
     label: "VUE",
     images: images6,
   },
-  {
-    label: "REACT",
-    images: images7,
-  },
+  // {
+  //   label: "REACT",
+  //   images: images7,
+  // },
 ];
 
 const { Title } = Typography;
