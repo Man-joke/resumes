@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { ConfigProvider, Layout } from "antd";
-import { Content } from "antd/es/layout/layout";
-import Sider from "antd/es/layout/Sider";
 import SideMenu from "./SideMenu";
+
 
 import Home from "./Home";
 import Profile from "./Profile";
-import Work from "./Work";
+import Works from "./Works";
 import ETC from "./Etc";
+
+const {Content, Sider }  = Layout;
 
 const maxWidth = {
   margin: "0 auto",
@@ -28,7 +29,7 @@ const Main = () => {
       theme={{
         components: {
           Layout: {
-            siderBg: "#31383E",
+            sideBg: "#31383E",
             bodyBg: "#fff",
           },
         },
@@ -43,7 +44,7 @@ const Main = () => {
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/profile" element={<Profile />}></Route>
-              <Route path="/work" element={<Work />}></Route>
+              <Route path="/work" element={<Works />}></Route>
               <Route path="/etc" element={<ETC />}></Route>
             </Routes>
           </Content>
