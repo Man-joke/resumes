@@ -13,7 +13,7 @@ const items = [
     key: "1",
     // icon: <PieChartOutlined />,
     label: (
-      <Link to="/">
+      <Link to="resumes/home">
         <Home />
         Home
       </Link>
@@ -23,7 +23,7 @@ const items = [
     key: "2",
     // icon: <DesktopOutlined />,
     label: (
-      <Link to="/profile">
+      <Link to="resumes/profile">
         <Profile />
         Profile
       </Link>
@@ -33,7 +33,7 @@ const items = [
     key: "3",
     // icon: <ContainerOutlined />,
     label: (
-      <Link to="/work">
+      <Link to="resumes/work">
         <Work />
         Work
       </Link>
@@ -43,7 +43,7 @@ const items = [
     key: "4",
     // icon: <ContainerOutlined />,
     label: (
-      <Link to="/etc">
+      <Link to="resumes/etc">
         <Etc />
         ETC
       </Link>
@@ -71,7 +71,8 @@ const SideMenu = () => {
 
   let result =1;
   useEffect(() => {
-    const path = location.pathname.split("/")[1];
+    const path = location.pathname.split("/")[2];
+    console.log(path)
     switch (path) {
       case "etc":
         result = "4";
