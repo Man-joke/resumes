@@ -23,9 +23,9 @@ const contentStyle = {
 const Main = () => {
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   navigate("resumes/home");
-  // }, []);
+  useEffect(() => {
+    navigate("resumes/home");
+  }, []);
 
   return (
     <ConfigProvider
