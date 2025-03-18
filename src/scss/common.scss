@@ -1,7 +1,12 @@
+.visual-hidden{
+  position: absolute;
+  opacity: 0;
+}
 
-
-.section {
+.section-right {
+  position: relative;
   padding: 6rem;
+  overflow: auto;
 
   .section-top {
     .title-h3 {
@@ -29,8 +34,10 @@
 }
 
 
+
+
 @media screen and (min-width: 1200px) {
-  .section {
+  .section-right {
     padding: 11.4rem 13.3rem 0;
   }
 }

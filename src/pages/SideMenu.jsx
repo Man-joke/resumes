@@ -100,7 +100,7 @@ const SideMenu = () => {
         <figure className="figure">
           <img src={manjoke} alt="프로필이미지" />
         </figure>
-        <h3>장만순</h3>
+        <h3>장 만 순</h3>
         <p>Man Joke</p>
       </Flex>
 
