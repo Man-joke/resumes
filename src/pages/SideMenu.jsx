@@ -93,7 +93,7 @@ const SideMenu = () => {
   return (
     <>
       <div className="portfolio">
-        <h2>Portfolio</h2>
+        <h2>JMS Portfolio</h2>
       </div>
 
       <Flex vertical justify="center" align="center" className="my-info">
