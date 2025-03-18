@@ -5,13 +5,14 @@ const home = () => {
   const { Title, Text } = Typography;
 
   const titleStyled = {
-    fontSize: "10rem",
+    fontSize: "11rem",
     position: "absolute",
     left: "50%",
-    top: "40%",
+    top: "45%",
     transform: "translate(-50%, -50%)",
     width: "100%",
     marginBottom: "0",
+    lineHeight: "1.2"
   };
 
   const subStyled = {
@@ -25,7 +26,7 @@ const home = () => {
 
   return (
     <>
-      <Title level={2} className="text-center" style={titleStyled}>
+      <Title level={2} className="text-center roboto-mono" style={titleStyled}>
         WELCOME TO MY <br />
         PORTFOLIO
       </Title>
