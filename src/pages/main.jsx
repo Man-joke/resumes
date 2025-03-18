@@ -5,10 +5,10 @@ import { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
 import SideMenu from "./SideMenu";
 
-import Home from "./Home";
-import Profile from "./Profile";
-import Work from "./Work";
-import ETC from "./Etc";
+import Home from "./home";
+import Profile from "./profile";
+import Work from "./work";
+import ETC from "./etc";
 
 const maxWidth = {
   margin: "0 auto",
