@@ -6,7 +6,7 @@ import SideMenu from "./SideMenu";
 
 import Home from "./Home";
 import Profile from "./Profile";
-import Works from "./Works";
+import Works from "./Work";
 import ETC from "./Etc";
 
 const {Content, Sider }  = Layout;
