@@ -23,7 +23,7 @@ const contentStyle = {
 };
 
 
-const main = () => {
+const Main = () => {
   return (
     <ConfigProvider
       theme={{
@@ -54,4 +54,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;
