@@ -13,7 +13,7 @@ const Modal = ({ onClose, item }) => {
           <button onClick={onClose} className="close">
             <Close />
           </button>
-          <div className="top">
+          <div className="top" style={{display: 'flex'}}>
             <figure>
               <img src={item.img} alt={item.name} />
             </figure>
